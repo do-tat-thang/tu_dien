@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><h1>Dictionary</h1></p>
+<input type="text" id="cho" placeholder="nhập từ">
+<input type="button" onclick="kimochi()" value="click">
+<p>Dịch : <span id="k"></span></p>
+<script>
+let a = ["Play","Love","Twitch" , "Important person"];
+let b = ["Chơi","Yêu","Chuột", "Người Quan Trọng"];
+function kimochi() {
+    let v = document.getElementById("cho").value;
+    for (i=0;i<a.length;i++){
+        if (a[i]== v){
+            document.getElementById("k").innerHTML=b[i];
+        }
+    }
+}
+</script>
+
+</body>
+</html>
